@@ -31,6 +31,7 @@ public class MovimentacaoService {
         movimentacao.setValor(valor);
 
         Correntista correntista = correntistaRepository.findById(novaMovimentacao.getIdConta()).orElse(null);
+        System.out.println("teste"+correntista);
         if(correntista != null){
             correntista.getConta().setSaldo(correntista.getConta().getSaldo() + valor);
             correntistaRepository.save(correntista);

@@ -7,7 +7,7 @@ public class NovaMovimentacaoDto {
     private String descricao;
 
     private Double valor;
-
+    private Integer idConta;
     private MovimentacaoTipo tipo;
 
     public String getDescricao() {
@@ -35,12 +35,12 @@ public class NovaMovimentacaoDto {
     }
 
     public Integer getIdConta() {
-        return IdConta;
+        return idConta;
     }
 
     public void setIdConta(Integer idConta) {
-        IdConta = idConta;
+        this.idConta = idConta;
     }
 
-    private Integer IdConta;
+
 }

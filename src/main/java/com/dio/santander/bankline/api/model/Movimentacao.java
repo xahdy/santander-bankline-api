@@ -64,6 +64,6 @@ public class Movimentacao {
     }
 
     public void setIdConta(Integer idConta) {
-        idConta = idConta;
+        this.idConta = idConta;
     }
 }
